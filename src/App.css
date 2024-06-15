@@ -24,7 +24,6 @@
 .wrapper-point {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
   padding: 1em 0;
 }
 

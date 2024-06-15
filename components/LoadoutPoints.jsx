@@ -3,7 +3,6 @@ import PointIcon from "./PointIcon";
 
 const LoadoutPoints = ({ points, id }) => {
   const [usedPoints, setUsedPoints] = useState([]);
-  const [availablePoints, setAvailablePoints] = useState([]);
 
   useEffect(() => {
     if (!usedPoints.length) {
