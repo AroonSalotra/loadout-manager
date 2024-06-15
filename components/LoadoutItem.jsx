@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { GiPistolGun } from "react-icons/gi";
+import LoadoutPoints from "./LoadoutPoints";
 
-const LoadoutItem = ({ weaponName, weaponIcon }) => {
+const LoadoutItem = ({ weaponName, weaponIcon, points }) => {
   const [showWeapon, setShowWeapon] = useState(false);
 
   const handleShowWeapon = () => {
@@ -23,6 +24,8 @@ const LoadoutItem = ({ weaponName, weaponIcon }) => {
           <GiPistolGun />
         </i>
       ) : null}
+
+      <LoadoutPoints points={points} id={weaponName} />
     </div>
   );
 };

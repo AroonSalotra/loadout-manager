@@ -9,15 +9,17 @@ const LoadoutItems = () => {
 
   return (
     <div className="container-loadout">
-      {LoadoutInfo.map(({ weaponName, weaponIcon }) => {
+      {LoadoutInfo.map(({ weaponName, weaponIcon, points }) => {
         return (
           <LoadoutItem
             key={weaponName}
             weaponName={weaponName}
             weaponIcon={weaponIcon}
+            points={points}
           />
         );
       })}
+
     </div>
   );
 };

@@ -21,9 +21,26 @@
   flex-direction: column;
 }
 
+.wrapper-point {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1em 0;
+}
+
 .icon-large {
   font-size: 7rem;
   padding: 1rem 0;
+}
+
+.icon-point {
+  width: 4rem;
+  height: 0.75rem;
+  background: gray;
+}
+
+.point-active {
+  background: rgb(153, 153, 69);
 }
 
 @media (min-width: 1200px) {

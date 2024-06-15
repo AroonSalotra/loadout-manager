@@ -1,14 +1,17 @@
 [
   {
     "weaponName": "Assault Rifle",
-    "weaponIcon": "AR"
+    "weaponIcon": "AR",
+    "points": 2
   },
   {
     "weaponName": "Sniper Rifle",
-    "weaponIcon": "SR"
+    "weaponIcon": "SR",
+    "points": 4
   },
   {
     "weaponName": "Shotgun",
-    "weaponIcon": "SHG"
+    "weaponIcon": "SHG",
+    "points": 1
   }
 ]
