@@ -1,6 +1,36 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
+}
+
+.btn-loadout {
+  max-width: 90vw;
+  width: 400px;
+  height: 180px;
+}
+
+.container-loadout {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-loadout {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-large {
+  font-size: 7rem;
+  padding: 1rem 0;
+}
+
+@media (min-width: 1200px) {
+  .container-loadout {
+    position: absolute;
+    left: 2rem;
+    top: 4rem;
+  }
+
 }
