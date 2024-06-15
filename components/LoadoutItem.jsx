@@ -3,11 +3,11 @@ import { GiPistolGun } from "react-icons/gi";
 import LoadoutPoints from "./LoadoutPoints";
 
 const LoadoutItem = ({ weaponName, weaponIcon, points }) => {
-  const [showWeapon, setShowWeapon] = useState(false);
+  const [showDetails, setShowDetails] = useState(false);
 
   const handleShowWeapon = () => {
-    setShowWeapon(!showWeapon);
-    console.log(showWeapon);
+    setShowDetails(!showDetails);
+    console.log(showDetails);
   };
 
   return (
@@ -19,13 +19,14 @@ const LoadoutItem = ({ weaponName, weaponIcon, points }) => {
         <p>{weaponName}</p>
       </button>
 
-      {showWeapon ? (
-        <i className="icon-large">
-          <GiPistolGun />
-        </i>
+      {showDetails ? (
+        <div>
+          <i className="icon-large">
+            <GiPistolGun />
+          </i>
+          <LoadoutPoints points={points} id={weaponName} />
+        </div>
       ) : null}
-
-      <LoadoutPoints points={points} id={weaponName} />
     </div>
   );
 };
