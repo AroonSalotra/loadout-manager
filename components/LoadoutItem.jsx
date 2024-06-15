@@ -11,23 +11,17 @@ const LoadoutItem = ({ weaponName, weaponIcon, points }) => {
   };
 
   return (
-    <div className="wrapper-loadout">
-      <button className="btn-loadout" type="button" onClick={handleShowWeapon}>
-        <i>
+    // <button className="wrapper-loadout">
+    <button className="btn-loadout" type="button" onClick={handleShowWeapon}>
+      <div>
+        <i className="icon-large">
           <GiPistolGun />
         </i>
-        <p>{weaponName}</p>
-      </button>
-
-      {showDetails ? (
-        <div>
-          <i className="icon-large">
-            <GiPistolGun />
-          </i>
-          <LoadoutPoints points={points} id={weaponName} />
-        </div>
-      ) : null}
-    </div>
+        <p className="weapon-name">{weaponName}</p>
+        <LoadoutPoints points={points} id={weaponName} />
+      </div>
+    </button>
+    // </button>
   );
 };
 
