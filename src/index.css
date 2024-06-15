@@ -26,6 +26,7 @@ a:hover {
 button {
   outline: none;
   border: none;
+  background: rgb(58, 58, 58);
 }
 
 button:hover {
