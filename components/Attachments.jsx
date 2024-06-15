@@ -13,9 +13,9 @@ const Attachments = () => {
         ? getAttachments.map(({ attachmentName, attachmentCost }) => {
             return (
               <>
-                <button className="btn attachment-text">
-                  <p>{attachmentName}</p>
-                  <p>{attachmentCost}</p>
+                <button className="btn btn-attachment">
+                  <p className="attachment-text">{attachmentName}</p>
+                  <p className="attachment-cost">{attachmentCost}</p>
                 </button>
               </>
             );
