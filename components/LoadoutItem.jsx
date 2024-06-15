@@ -1,10 +1,10 @@
+import { GiPistolGun } from "react-icons/gi";
+
 const LoadoutItem = () => {
   return (
-    <button>
-      <figure>
-        <i></i>
-        <figcaption>Weapon</figcaption>
-      </figure>
+    <button className="btn-loadout" type="button">
+        <i><GiPistolGun /></i>
+        <p>Weapon</p>
     </button>
   );
 };
