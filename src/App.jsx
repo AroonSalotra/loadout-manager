@@ -1,14 +1,10 @@
-import LoadoutItem from "../components/LoadoutItem";
+import LoadoutItems from "../components/LoadoutItems";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <div className="container-loadout">
-        <LoadoutItem />
-        <LoadoutItem />
-        <LoadoutItem />
-      </div>
+      <LoadoutItems />
     </>
   );
 }

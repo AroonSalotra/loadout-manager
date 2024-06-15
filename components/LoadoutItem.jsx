@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { GiPistolGun } from "react-icons/gi";
 
-const LoadoutItem = () => {
+const LoadoutItem = ({ weaponName, weaponIcon }) => {
   const [showWeapon, setShowWeapon] = useState(false);
 
   const handleShowWeapon = () => {
     setShowWeapon(!showWeapon);
-    console.log(showWeapon)
+    console.log(showWeapon);
   };
 
   return (
@@ -15,7 +15,7 @@ const LoadoutItem = () => {
         <i>
           <GiPistolGun />
         </i>
-        <p>Weapon</p>
+        <p>{weaponName}</p>
       </button>
 
       {showWeapon ? (

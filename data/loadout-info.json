@@ -1,0 +1,14 @@
+[
+  {
+    "weaponName": "Assault Rifle",
+    "weaponIcon": "AR"
+  },
+  {
+    "weaponName": "Sniper Rifle",
+    "weaponIcon": "SR"
+  },
+  {
+    "weaponName": "Shotgun",
+    "weaponIcon": "SHG"
+  }
+]
