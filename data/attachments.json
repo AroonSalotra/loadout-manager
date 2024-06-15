@@ -1,8 +1,8 @@
 [
-  { "attachmentName": "Suppressor" },
-  { "attachmentName": "Extended Barrel" },
-  { "attachmentName": "Enhanced Grip" },
-  { "attachmentName": "Infrared Sight" },
-  { "attachmentName": "Underbarrel Launcher" },
-  { "attachmentName": "Bipod" }
+  { "attachmentName": "Suppressor", "attachmentCost": 2 },
+  { "attachmentName": "Extended Barrel", "attachmentCost": 1 },
+  { "attachmentName": "Enhanced Grip", "attachmentCost": 2 },
+  { "attachmentName": "Infrared Sight", "attachmentCost": 1 },
+  { "attachmentName": "Underbarrel Launcher", "attachmentCost": 2 },
+  { "attachmentName": "Bipod", "attachmentCost": 1 }
 ]

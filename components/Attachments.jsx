@@ -10,11 +10,14 @@ const Attachments = () => {
   return (
     <>
       {getAttachments
-        ? getAttachments.map(({ attachmentName }) => {
+        ? getAttachments.map(({ attachmentName, attachmentCost }) => {
             return (
-              <button className="attachment btn">
-                <p>{attachmentName}</p>
-              </button>
+              <>
+                <button className="btn attachment-text">
+                  <p>{attachmentName}</p>
+                  <p>{attachmentCost}</p>
+                </button>
+              </>
             );
           })
         : null}
