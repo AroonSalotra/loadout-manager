@@ -14,7 +14,7 @@ const LoadoutItem = ({ weaponName, weaponIcon, points }) => {
   return (
     <>
       {/* <button className="wrapper-loadout"> */}
-      <button className="btn-loadout" type="button" onClick={handleShowWeapon}>
+      <button className="btn" type="button" onClick={handleShowWeapon}>
         <div>
           <i className="icon-large">
             <GiPistolGun />
@@ -24,7 +24,9 @@ const LoadoutItem = ({ weaponName, weaponIcon, points }) => {
         </div>
       </button>
       {/* </button> */}
-      <Attachments />
+      <div className="wrapper-attachments">
+        <Attachments />
+      </div>
     </>
   );
 };

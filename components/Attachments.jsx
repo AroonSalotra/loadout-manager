@@ -12,9 +12,9 @@ const Attachments = () => {
       {getAttachments
         ? getAttachments.map(({ attachmentName }) => {
             return (
-              <div className="wrapper-attachments">
+              <button className="attachment btn">
                 <p>{attachmentName}</p>
-              </div>
+              </button>
             );
           })
         : null}
